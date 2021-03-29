@@ -1,7 +1,7 @@
 /*
  * @Author: angula
  * @Date: 2021-03-29 10:15:56
- * @LastEditTime: 2021-03-29 11:10:01
+ * @LastEditTime: 2021-03-29 11:38:00
  * @FilePath: \BOSS??vue\echartsProject\aecharts\src\router\index.js
  */
 import Vue from 'vue'
@@ -20,6 +20,11 @@ const routes = [
     path: '/histogram',
     name: 'histogram',
     component: () => import('../views/histogram.vue')
+  },
+  {
+    path: '/Acircle',
+    name: 'Acircle',
+    component: () => import('../views/Acircle.vue')
   }
 ]
 

@@ -1,7 +1,7 @@
 <!--
  * @Author: angula
  * @Date: 2021-03-29 10:24:01
- * @LastEditTime: 2021-03-29 11:09:51
+ * @LastEditTime: 2021-03-29 14:55:19
  * @FilePath: \BOSS测试vue\echartsProject\aecharts\src\views\histogram.vue
 -->
 <template>
@@ -14,10 +14,12 @@
 export default {
   name: "histogram",
   data() {
-    return {};
+    return {
+      num: [15, 10, 36, 20, 1, 5]
+    };
   },
   mounted() {
-    console.log("已进入circle界面");
+    console.log("histogram");
     this.drawLine();
   },
   methods: {
@@ -38,7 +40,7 @@ export default {
           {
             name: "销量",
             type: "bar",
-            data: [5, 20, 36, 10, 10, 20]
+            data: this.num
           }
         ]
       });
